@@ -1,0 +1,330 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Full box container */
+/* ============================================ */
+.fullContainer{
+position: fixed;
+width: 80%;
+left: 10%;
+height: 85%;
+border: 1px solid gray;
+border-radius: 10px;
+margin-top:15px ;
+display: flex;
+flex-wrap: nowrap ;
+/* padding: 5px 6px; */
+}
+
+/* conversation list container */
+/* ============================================ */
+.conversationList{
+    width: 30%;
+        height: 100%;
+        border-right: 1px solid gray;
+        border-radius: 10px;
+}
+
+.conversationList-head{
+    border-bottom: 1px solid gray;
+    height: 60px;
+    background: rgb(36, 1, 53);
+    box-sizing: content-box;
+    border-radius: 10px 0 0;
+    margin: 0;
+    padding: 0 ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.conversationList-body{}
+
+
+
+/* conversation body container */
+/* ============================================ */
+.conversationBody{
+    width: 70%;
+    height: 100%;
+    /* border: 1px solid gray; */
+    position: relative;
+}
+
+.conversationBody-head img ,.conversationBody-body img{
+    width:44px;
+    height:44px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.conversationBody-head{
+    /* border-bottom: 1px solid gray; */
+        height: 60px;
+        position: absolute;
+        top:0 ;
+        width: 100%;
+     background: rgba(34, 6, 82, 0.889);
+}
+
+.conversationBody-body{
+    /* border: 1px solid rgb(228, 4, 4); */
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 85%;
+    bottom: 60px + 3px;
+    padding: 11px ;
+}
+
+/* MESSAGE CONTAINER STYLE*/
+/*++++++++++++++++++++++++++++++++++++++++++++++++*/
+#fulldiscussion{
+    display: block;
+    max-width: 60%;
+    margin-top: 11px;
+    padding: 6px 10px;
+
+}
+
+.sender{
+    margin-left: auto;
+    background-color:rgb(8, 78, 158) ;
+    border-radius: 10px 10px 0 10px;
+}
+.receiver{
+    margin-right: auto;
+    background-color: rgb(231, 230, 230);
+    border-radius: 9px 9px 9px 0;
+}
+.msg_footer{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+align-items: right;
+}
+
+
+.date{
+    font-size: 12px;
+    padding-right: 7px;
+}
+
+.read{
+    font-size: 15px;
+    color: lightgray;
+}
+
+
+/* footer*/
+.conversationBody-footer{
+    border-top: 1px solid rgb(53, 4, 246);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    margin: auto 0;
+    padding: 4px 5px;
+}
+
+.message {
+    width: 85%;
+    outline: 0;
+    box-shadow: 0;
+    background-color: gainsboro;
+    border-radius: 11px;
+    border: 0;
+    margin: auto 0;
+}
+
+.message:focus{
+    box-shadow: none;
+    outline: none;
+    border-style: none;
+}
+
+.send{
+width: 10%;
+font-size: 18px;
+font-weight: bold;
+}
+
+form{
+    background-color: white;
+    width: 100%;
+}
+
+
+
+
+.mesUsers{
+    display: flex;
+    flex-flow:row wrap ;
+    justify-content: space-between;
+}
+
+.userlist{
+    width: 30%;
+}
+
+
+/*Chat list conversation*/
+/*===========================================*/
+.personnalClass:hover {
+    cursor: pointer;
+    font-style: italic;
+}
+
+.userinfo{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    background-color: rgb(189, 191, 190);
+    width: 94%;
+    border-radius: 15px;
+
+}
+
+.userinfoimage{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+/*PROFIL*/
+/*----------------------------------------------------*/
+.myLive{
+    background-color: rgba(25, 33, 65, 0.866);
+    color: aliceblue;
+    width: 30%;
+    border-radius: 25px;
+
+
+}
+
+.profilform{
+    background-color: transparent;
+}
+
+.profilform input{
+    border-radius: 5px;
+}
+.fullProfil{
+    height: 95vh;
+    background-color: rgba(39, 40, 42, 0.76);
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+}
+.viewProfil{
+    width: 40%;
+}
+.info{
+    width: 60%;
+}
+
+.close{
+    position: absolute;
+    top:15px;
+    right: 15px;
+    font-size: 18px;
+}
+
+.close:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color:red;
+}
+
+
+
+
+/*HOME*/
+/*===========================================*/
+
+.home{
+    height:94vh;
+    background-image : url('./../../public/study 3.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.leftimage , .rightimage{
+    width: 35%;
+    background-color: rgba(45, 44, 43, 0.559);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 100%;
+}
+.leftimage img , .rightimage img{
+    width: 36%;
+    height: 25%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
